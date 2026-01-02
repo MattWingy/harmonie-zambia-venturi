@@ -1,0 +1,21 @@
+# Harmonie Governance Framework – Zambezi Basin Council
+
+## Article 1: Authority
+The Zambezi Basin Council (ZBC) replaces the Zambezi River Authority. All water allocation requires 80% multi-level approval.
+
+## Article 2: Council Structure
+- **Level 1**: Upstream farmers (30% seats)
+- **Level 2**: Mid-basin towns (20% seats)
+- **Level 3**: Kariba-adjacent cities (20% seats)
+- **Level 4**: Downstream communities (30% seats + ecological veto)
+
+## Article 3: Problem-Victim Priority
+30-40% of seats reserved for communities directly harmed by water decisions.
+
+## Article 4: APO AI Enforcement
+All votes recorded on blockchain. APO AI auto-triggers Level 4 veto if ecological flow &lt; 200 m³/s.
+
+## Article 5: Non-Spontaneous Selection
+Council members peer-nominated, not self-selected. Dark Triad screening mandatory.
+
+## Article 6-17: [Expand with your full 17 articles]

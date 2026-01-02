@@ -1,0 +1,39 @@
+import time
+import json
+
+class ZambeziSensor:
+    def __init__(self, module_id):
+        self.module_id = module_id
+    
+    def read_flow(self):
+        return 0.25  # m³/s
+    
+    def read_pressure(self):
+        return 115000  # Pa
+    
+    def detect_cavitation(self):
+        return False  # True if vapor fraction > 1%
+
+def trigger_level4_veto(ecological_flow):
+    if ecological_flow < 200:  # m³/s
+        print("ALERT: Level 4 ecological veto triggered! Halting turbines.")
+        return True
+    return False
+
+if __name__ == "__main__":
+    sensor = ZambeziSensor(module_id="ZAM-001")
+    while True:
+        flow = sensor.read_flow()
+        pressure = sensor.read_pressure()
+        cavitation = sensor.detect_cavitation()
+        
+        log_entry = {
+            "timestamp": time.time(),
+            "flow": flow,
+            "pressure": pressure,
+            "cavitation": cavitation
+        }
+        print(json.dumps(log_entry))
+        
+        trigger_level4_veto(flow)
+        time.sleep(60)  # 1-minute intervals
