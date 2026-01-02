@@ -220,3 +220,23 @@ constant/polyMesh/
 *.stl
 *.obj
 *.vtk
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# OpenFOAM large files (CRITICAL FOR THIS PROJECT)
+processor*/
+postProcessing/
+constant/polyMesh/
+*.foam
+
+# CAD temp files
+*.log
+*.bak
+*.FCStd1
+
+# Large binaries
+*.stl
+*.obj
+*.vtk
